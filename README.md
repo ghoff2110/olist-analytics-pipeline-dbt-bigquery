@@ -80,10 +80,9 @@ cd olist_project
 dbt run
 ```
 dbt test
-
+```
 Generate docs
 ```
 dbt docs generate
-```
-dbt docs serve
+``` dbt docs serve
 ```
