@@ -55,18 +55,29 @@ dbt test
 
 ## How to run it
 
-```bash
+=> Prerequisites
+
+Python 3.11+
+Google Cloud account with BigQuery access
+dbt-bigquery installed
+
+## SETUP
+bash# Clone the repo
 git clone https://github.com/YOUR_USERNAME/olist-ecommerce-dbt-bigquery.git
-cd olist_project
+cd olist-ecommerce-dbt-bigquery
+
+# Install dependencies
 pip install dbt-bigquery
+
+# Configure your BigQuery connection
+# Edit ~/.dbt/profiles.yml with your project credentials => IMPORTANT
+
+# Run the pipeline
+cd olist_project
 dbt run
 dbt test
+
+# Generate docs
+dbt docs generate
+dbt docs serve
 ```
-
----
-
-## About
-
-Built by **[Your Name]** — 3 years experience in data and ERP consulting.
-
-[LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/yourusername)
